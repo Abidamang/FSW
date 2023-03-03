@@ -1,0 +1,20 @@
+{	
+    "clock": "StandardClock",	
+    "targets": ["native"],	
+    "native": {	
+        "class": "CfsExternalEntity",	
+        "executable": "core-cpu1",	
+        "directory": "../../../build/exe/cpu1",	
+        "storage": "../../../build/exe/cpu1",	
+        "database": "../../../ctdb/ct.json",	
+        "command": {	
+            "host": "localhost",	
+            "port": 1234	
+        },	
+        "telemetry": {	
+            "host": "localhost",	
+            "port": 1235	
+        }	
+    },	
+    "include": ["../Test_CFS_TLM.py", "../Test_CFS_CMD_EVR.py", "../Test_CFS_GND_CMD.py"]	
+}	
